@@ -28,6 +28,7 @@ const Header = () => {
             <Link className='header__link' href={'#'}>
               Contact Us
             </Link>
+            <button className='header__btn__2'>Booking car</button>
             <button className='header__btn'>
               Download App{' '}
               <FontAwesomeIcon

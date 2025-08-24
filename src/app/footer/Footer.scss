@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+.footer {
+  color: white;
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+
+  .footer__body {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__name {
+    font-family: 'DM Serif Text', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+  }
+  .footer__span {
+    font-family: 'Rye', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #39ff14;
+  }
+  .footer__link {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .footer__icon {
+    max-width: 23px;
+    max-height: 23px;
+  }
+  .footer__img {
+    width: 100%;
+    color: rgb(199, 199, 199);
+    height: 100%;
+  }
+  .footer__email {
+    margin-left: 10px;
+    color: rgb(199, 199, 199);
+    transition: all 400ms ease;
+
+    &:hover {
+      color: #39ff14;
+    }
+  }
+  .footer__items {
+    height: 100%;
+  }
+  .footer__column__1 {
+    flex-basis: 35%;
+    height: 100%;
+  }
+  .footer__column__2 {
+    flex-basis: 15%;
+  }
+  .footer__column__3 {
+    flex-basis: 15%;
+  }
+  .footer__column__4 {
+    flex-basis: 30%;
+  }
+
+  .footer__line {
+    height: 0.5px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.575);
+  }
+
+  .footer__contacts {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: rgb(199, 199, 199);
+  }
+}
