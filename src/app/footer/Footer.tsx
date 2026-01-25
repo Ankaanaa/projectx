@@ -1,3 +1,9 @@
+import {
+  faFacebookF,
+  faInstagram,
+  faXTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Footer.scss'
 import FooterBlockInfo from './footerBlockInfo/FooterBlockInfo'
 import FooterFeedback from './footerFeedback/FooterFeedback'
@@ -30,7 +36,19 @@ const Footer = () => {
       <div className='footer__line'></div>
       <div className='footer__contacts'>
         <div>@2025 ProjectX All Rights are revers</div>
-        <div className='footer__social'></div>
+        <div className='footer__social'>
+          <div className='footer__circle'>
+            <FontAwesomeIcon className='footer__icon' icon={faInstagram} />
+          </div>
+          <div className='footer__circle'>
+            {' '}
+            <FontAwesomeIcon className='footer__icon' icon={faFacebookF} />
+          </div>
+          <div className='footer__circle'>
+            {' '}
+            <FontAwesomeIcon className='footer__icon' icon={faXTwitter} />
+          </div>
+        </div>
       </div>
     </div>
   )

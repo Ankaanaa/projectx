@@ -1,6 +1,5 @@
-import { faDownload } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import CurrencySwitch from './currencySwitch/CurrencySwitch'
 import './header.scss'
 const Header = () => {
   return (
@@ -25,17 +24,8 @@ const Header = () => {
             <Link className='header__link' href={'#'}>
               Blog
             </Link>
-            <Link className='header__link' href={'#'}>
-              Contact Us
-            </Link>
+            <CurrencySwitch />
             <button className='header__btn__2'>Booking car</button>
-            <button className='header__btn'>
-              Download App{' '}
-              <FontAwesomeIcon
-                className='header__downloadIcon'
-                icon={faDownload}
-              />
-            </button>
           </nav>
         </div>
       </div>

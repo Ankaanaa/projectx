@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "isCurrencyEuro": true,
+    "isCurrencyDollar": false
+  },
+  "cars": [
+    {
+      "brand": "BMW",
+      "model": "i5",
+      "releaseYear": 2020,
+      "Price3daysEuro": 50,
+      "Price3daysDollar": 50,
+      "classCar": "sedan",
+      "isElectric": true,
+      "isAvailable": true,
+      "batteryCapacity": 81.2,
+      "transmission": {
+        "type": "automatic",
+        "gears": 1,
+        "drive": "RWD"
+      },
+      "motor": {
+        "type": "electric",
+        "maxPower": 105,
+        "powerKW": 250,
+        "torque": 400
+      },
+      "performance": {
+        "acceleration": 6,
+        "maxSpeed": 193
+      },
+      "dimensions": {
+        "width": 1900,
+        "length": 5060,
+        "height": 1515
+      },
+      "weight": {
+        "curb": 2205,
+        "gross": 2740
+      }
+    },
+    {
+      "brand": "MercedesBenz",
+      "model": "w206",
+      "releaseYear": 2026,
+      "Price3daysEuro": 60,
+      "Price3daysDollar": 60,
+      "classCar": "sedan",
+      "isElectric": false,
+      "isAvailable": true,
+      "batteryCapacity": null,
+      "transmission": {
+        "type": "automatic",
+        "gears": 9,
+        "drive": "RWD"
+      },
+      "motor": {
+        "type": "hybrid",
+        "maxPower": 313,
+        "powerKW": 230,
+        "torque": 440
+      },
+      "performance": {
+        "acceleration": 6.9,
+        "maxSpeed": 235
+      },
+      "dimensions": {
+        "width": 1820,
+        "length": 4882,
+        "height": 1461
+      },
+      "weight": {
+        "curb": 2130,
+        "gross": 2655
+      }
+    },
+    {
+      "brand": "MercedesBenz",
+      "model": "AMG-GT-43",
+      "releaseYear": 2026,
+      "Price3daysEuro": 85,
+      "Price3daysDollar": 85,
+      "classCar": "E",
+      "isElectric": false,
+      "isAvailable": true,
+      "batteryCapacity": null,
+      "transmission": {
+        "type": "robot",
+        "gears": 9,
+        "drive": "AWD"
+      },
+      "motor": {
+        "type": "petrol",
+        "maxPower": 367,
+        "powerKW": 270,
+        "torque": 500
+      },
+      "performance": {
+        "acceleration": 4.9,
+        "maxSpeed": 270
+      },
+      "dimensions": {
+        "width": 1871,
+        "length": 5054,
+        "height": 1455
+      },
+      "weight": {
+        "curb": 1965,
+        "gross": 2515
+      }
+    },
+    {
+      "brand": "Audi",
+      "model": "S6",
+      "releaseYear": 2020,
+      "Price3daysEuro": 44,
+      "Price3daysDollar": 43,
+      "classCar": "sedan",
+      "isElectric": false,
+      "isAvailable": true,
+      "batteryCapacity": null,
+      "transmission": {
+        "type": "robot",
+        "gears": 8,
+        "drive": "AWD"
+      },
+      "motor": {
+        "type": "petrol",
+        "maxPower": 444,
+        "powerKW": 327,
+        "torque": 600
+      },
+      "performance": {
+        "acceleration": 5,
+        "maxSpeed": 250
+      },
+      "dimensions": {
+        "width": 1886,
+        "length": 4954,
+        "height": 1446
+      },
+      "weight": {
+        "curb": 1955,
+        "gross": 2590
+      }
+    },
+    {
+      "brand": "BMW",
+      "model": "i7-eDrive60",
+      "releaseYear": 2020,
+      "Price3daysEuro": 60,
+      "Price3daysDollar": 60,
+      "classCar": "sedan",
+      "isElectric": true,
+      "isAvailable": true,
+      "batteryCapacity": 101.7,
+      "transmission": {
+        "type": "robot",
+        "gears": 1,
+        "drive": "RWD"
+      },
+      "motor": {
+        "type": "electric",
+        "maxPower": 544,
+        "powerKW": 400,
+        "torque": 745
+      },
+      "performance": {
+        "acceleration": 4.7,
+        "maxSpeed": 240
+      },
+      "dimensions": {
+        "width": 1950,
+        "length": 5391,
+        "height": 1544
+      },
+      "weight": {
+        "curb": 2715,
+        "gross": 3215
+      }
+    }
+  ]
+}

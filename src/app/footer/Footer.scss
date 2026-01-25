@@ -83,5 +83,33 @@
     margin: 0 auto;
     margin-top: 30px;
     color: rgb(199, 199, 199);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__social {
+    display: flex;
+  }
+  .footer__circle {
+    margin-left: 5px;
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+
+    &:hover {
+      .footer__icon {
+        color: #39ff14;
+      }
+    }
+  }
+
+  .footer__icon {
+    transition: all 400ms ease;
+    margin-top: 5px;
+    color: black;
   }
 }
