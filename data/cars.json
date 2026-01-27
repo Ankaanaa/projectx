@@ -1,7 +1,7 @@
 {
   "meta": {
-    "isCurrencyEuro": true,
-    "isCurrencyDollar": false
+    "isCurrencyEuro": false,
+    "isCurrencyDollar": true
   },
   "cars": [
     {
@@ -13,6 +13,8 @@
       "classCar": "sedan",
       "isElectric": true,
       "isAvailable": true,
+      "dateStartBooked": null,
+      "dateEndBooked": null,
       "batteryCapacity": 81.2,
       "transmission": {
         "type": "automatic",
@@ -48,6 +50,8 @@
       "classCar": "sedan",
       "isElectric": false,
       "isAvailable": true,
+      "dateStartBooked": null,
+      "dateEndBooked": null,
       "batteryCapacity": null,
       "transmission": {
         "type": "automatic",
@@ -83,6 +87,8 @@
       "classCar": "E",
       "isElectric": false,
       "isAvailable": true,
+      "dateStartBooked": null,
+      "dateEndBooked": null,
       "batteryCapacity": null,
       "transmission": {
         "type": "robot",
@@ -118,6 +124,8 @@
       "classCar": "sedan",
       "isElectric": false,
       "isAvailable": true,
+      "dateStartBooked": null,
+      "dateEndBooked": null,
       "batteryCapacity": null,
       "transmission": {
         "type": "robot",
@@ -153,6 +161,8 @@
       "classCar": "sedan",
       "isElectric": true,
       "isAvailable": true,
+      "dateStartBooked": null,
+      "dateEndBooked": null,
       "batteryCapacity": 101.7,
       "transmission": {
         "type": "robot",

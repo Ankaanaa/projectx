@@ -8,6 +8,7 @@
   background-color: black;
   margin: 0 auto;
   padding: 20px;
+  padding-bottom: 40px; // еще не понял как лучше без или с ним
   // border-bottom: #39ff14 2px solid;
   // border: 1px solid red;
   padding-left: 40px;
@@ -103,5 +104,15 @@
     width: 15px;
     padding-top: 1px;
     height: 15px;
+  }
+
+  .header__search {
+    position: absolute;
+    left: 30%;
+    margin-top: 5px;
+    width: 600px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #39ff14;
   }
 }

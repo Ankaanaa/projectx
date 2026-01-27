@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    remotePatterns: ['i.postimg.cc', 'i.porb'].map((domain) => ({
+      protocol: 'https',
+      hostname: domain,
+    })),
+  },
+}
 
-export default nextConfig;
+export default nextConfig

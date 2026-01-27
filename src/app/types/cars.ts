@@ -10,6 +10,8 @@ export interface Cars {
     classCar: string,
     isElectric: boolean,
     isAvailable: boolean,
+    dateStartBooked: null | string,
+    dateEndBooked: null | string,
     batteryCapacity: number,
     transmission: Transmission,
     motor: Motor,

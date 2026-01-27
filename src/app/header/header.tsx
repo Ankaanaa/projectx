@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import CurrencySwitch from './currencySwitch/CurrencySwitch'
 import './header.scss'
+import Search from './search/Search'
 const Header = () => {
   return (
     <header className='header'>
@@ -29,6 +30,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
+      <Search />
     </header>
   )
 }

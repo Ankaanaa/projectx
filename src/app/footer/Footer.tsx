@@ -1,3 +1,4 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import {
   faFacebookF,
   faInstagram,
@@ -38,15 +39,24 @@ const Footer = () => {
         <div>@2025 ProjectX All Rights are revers</div>
         <div className='footer__social'>
           <div className='footer__circle'>
-            <FontAwesomeIcon className='footer__icon' icon={faInstagram} />
+            <FontAwesomeIcon
+              className='footer__icon'
+              icon={faInstagram as unknown as IconProp}
+            />
           </div>
           <div className='footer__circle'>
             {' '}
-            <FontAwesomeIcon className='footer__icon' icon={faFacebookF} />
+            <FontAwesomeIcon
+              className='footer__icon'
+              icon={faFacebookF as unknown as IconProp}
+            />
           </div>
           <div className='footer__circle'>
             {' '}
-            <FontAwesomeIcon className='footer__icon' icon={faXTwitter} />
+            <FontAwesomeIcon
+              className='footer__icon'
+              icon={faXTwitter as unknown as IconProp}
+            />
           </div>
         </div>
       </div>
