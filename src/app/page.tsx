@@ -1,5 +1,9 @@
 import Image from 'next/image'
+import AdvantagesOur from './advantagesOur/AdvantagesOur'
+import MarkCars from './api/markCars/MarkCars'
 import style from './main.module.scss'
+import RunningLine from './runningLine/RunningLine'
+import Services from './services/Services'
 
 export default function Home() {
   return (
@@ -33,6 +37,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <MarkCars />
+      <AdvantagesOur />
+      <RunningLine />
+      <Services />
     </div>
   )
 }

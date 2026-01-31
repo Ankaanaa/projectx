@@ -1,0 +1,48 @@
+.services {
+  margin-top: 200px;
+
+  .services__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .services__block {
+    display: flex;
+    position: relative;
+  }
+
+  .services__title {
+    color: #fd5252;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .services__btn {
+    border: 1px solid #fd5252;
+    width: 300px;
+    height: 45px;
+    border-radius: 15px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 400ms ease all;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #fd5252;
+    }
+  }
+  .services__arrow {
+    text-align: center;
+  }
+  .services__text {
+    position: absolute;
+    color: white;
+    max-width: 300px;
+    width: 250px;
+    top: -25px;
+    left: 150px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,16 @@
+.marks {
+  .marks__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .marks__imageBlock {
+    width: 130px;
+    max-width: 200px;
+    height: 100px;
+  }
+  .marks__image {
+    width: 100%;
+    height: 100%;
+  }
+}

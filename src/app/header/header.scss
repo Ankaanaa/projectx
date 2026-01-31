@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .header {
-  // position: fixed;
+  position: fixed;
+  z-index: 3;
   width: 100%;
   background-color: black;
   margin: 0 auto;
@@ -25,14 +26,14 @@
     font-family: 'Rye', serif;
     font-weight: 400;
     font-style: normal;
-    color: #39ff14;
+    color: #fd5252;
   }
 
   .header__body {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    border-bottom: #39ff14 2.5px solid;
+    border-bottom: #fd5252 1px solid;
     padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
@@ -51,8 +52,9 @@
     color: white;
     margin-left: 30px;
     transition: 400ms all ease;
+
     &:hover {
-      color: #39ff14;
+      color: #fd5252;
     }
   }
   .header__btn {
@@ -61,7 +63,7 @@
     font-weight: 500;
     font-style: normal;
     margin-left: 30px;
-    background-color: #39ff14;
+    background-color: #fd5252;
     width: 200px;
     height: 50px;
     border-radius: 5px;
@@ -70,9 +72,9 @@
     text-align: center;
 
     &:hover {
-      border: 2px solid #39ff14;
+      border: 2px solid #fd5252;
       background-color: black;
-      color: #39ff14;
+      color: #fd5252;
     }
   }
   .header__btn__2 {
@@ -87,12 +89,12 @@
     cursor: pointer;
     transition: 600ms all ease;
     text-align: center;
-    border: 2px solid #39ff14;
-    color: #39ff14;
+    border: 2px solid #fd5252;
+    color: #fd5252;
     background-color: transparent;
 
     &:hover {
-      background-color: #39ff14;
+      background-color: #fd5252;
       color: black;
     }
   }
@@ -113,6 +115,34 @@
     width: 600px;
     height: 48px;
     border-radius: 5px;
-    background-color: #39ff14;
+    background-color: #fd5252;
+  }
+
+  .header__social {
+    display: flex;
+    margin-left: 10px;
+  }
+  .header__circle {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: #fd5252 1px solid;
+    text-align: center;
+    transition: 400ms ease all;
+
+    &:hover {
+      background-color: #fd5252;
+      .header__icon {
+        color: white;
+      }
+    }
+  }
+
+  .header__icon {
+    transition: all 400ms ease;
+    margin-top: 8px;
+    color: #fd5252;
   }
 }

@@ -10,13 +10,24 @@
     font-style: normal;
     display: block;
     color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #fd5252;
+
+    &:hover {
+      background-color: #fd5252;
+    }
   }
   .modal {
-    padding: 20px;
+    // padding: 20px;
+    margin-left: 5px;
+    margin-top: 10px;
     position: absolute;
     width: 100px;
-    background-color: white;
+    // background-color: white;
+    color: white;
     border-radius: 5px;
+    z-index: 3;
 
     .modal__dollarBody {
       display: flex;
@@ -29,6 +40,10 @@
     }
     .modal__currency {
       margin-left: 10px;
+
+      &:hover {
+        color: #fd5252;
+      }
     }
   }
 }

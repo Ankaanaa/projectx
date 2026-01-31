@@ -13,15 +13,15 @@
     position: absolute;
     justify-content: space-between;
     // align-items: center;
-    top: 150;
-    left: 200;
+    top: 300;
+    left: 130;
   }
   .home__infoBlockTwo {
     margin-left: 50px;
   }
 
   .home__title {
-    font-size: 60px;
+    font-size: 70px;
   }
   .home__text {
     line-height: 28px;
@@ -34,13 +34,13 @@
     width: 160px;
     cursor: pointer;
     height: 50px;
-    border: 1px solid #39ff14;
-    background-color: #39ff14;
+    border: 1px solid #fd5252;
+    background-color: #fd5252;
     transition: 400ms ease all;
 
     &:hover {
       background-color: black;
-      border: 1px solid #39ff14;
+      border: 1px solid #fd5252;
       color: white;
     }
   }
@@ -51,11 +51,11 @@
     height: 50px;
     background-color: black;
     cursor: pointer;
-    border: 1px solid #39ff14;
+    border: 1px solid #fd5252;
     transition: 400ms ease all;
 
     &:hover {
-      background-color: #39ff14;
+      background-color: #fd5252;
       color: black;
     }
   }

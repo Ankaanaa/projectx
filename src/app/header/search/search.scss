@@ -7,7 +7,7 @@
   width: 600px;
   padding: 5px;
   border-radius: 5px;
-  background-color: #39ff14;
+  background-color: #fd5252;
   z-index: 2;
 
   .search__body {
@@ -36,7 +36,7 @@
   .search__picker__body {
     position: relative;
     display: flex;
-    border-color: 5px solid gold;
+    // border-color: 5px solid gold;
   }
 
   .search__span {
@@ -73,7 +73,7 @@
     font-weight: 500;
     font-style: normal;
     &:hover {
-      color: #39ff14;
+      color: #fd5252;
     }
   }
 }

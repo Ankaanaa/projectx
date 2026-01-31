@@ -1,3 +1,10 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import {
+  faFacebookF,
+  faInstagram,
+  faXTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import CurrencySwitch from './currencySwitch/CurrencySwitch'
 import './header.scss'
@@ -27,6 +34,28 @@ const Header = () => {
             </Link>
             <CurrencySwitch />
             <button className='header__btn__2'>Booking car</button>
+            <div className='header__social'>
+              <div className='header__circle'>
+                <FontAwesomeIcon
+                  className='header__icon'
+                  icon={faInstagram as unknown as IconProp}
+                />
+              </div>
+              <div className='header__circle'>
+                {' '}
+                <FontAwesomeIcon
+                  className='header__icon'
+                  icon={faFacebookF as unknown as IconProp}
+                />
+              </div>
+              <div className='header__circle'>
+                {' '}
+                <FontAwesomeIcon
+                  className='header__icon'
+                  icon={faXTwitter as unknown as IconProp}
+                />
+              </div>
+            </div>
           </nav>
         </div>
       </div>

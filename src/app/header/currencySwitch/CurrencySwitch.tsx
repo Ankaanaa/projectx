@@ -3,6 +3,9 @@
 import { useEffect, useState } from 'react'
 
 import { Cars, Meta } from '@/app/types/cars'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import style from './currency.module.scss'
 const CurrencySwitch = () => {
   const [meta, setMeta] = useState<Meta | null>(null)
@@ -37,14 +40,16 @@ const CurrencySwitch = () => {
           className={style.body__currency}
           onClick={() => setIsModalActive(!isModalActive)}
         >
-          US$▼
+          US$
+          <FontAwesomeIcon icon={faAngleDown as unknown as IconProp} />
         </div>
       ) : (
         <div
           className={style.body__currency}
           onClick={() => setIsModalActive(!isModalActive)}
         >
-          EUR▼
+          EUR
+          <FontAwesomeIcon icon={faAngleDown as unknown as IconProp} />
         </div>
       )}
       {isModalActive && (
@@ -58,12 +63,12 @@ const CurrencySwitch = () => {
             }
             className={style.modal__dollarBody}
           >
-            <input
+            {/* <input
               type='checkbox'
               disabled={meta?.isCurrencyDollar}
               checked={meta?.isCurrencyDollar}
               readOnly
-            />{' '}
+            />{' '} */}
             <div className={style.modal__currency}>US$</div>
           </div>
           <div
@@ -75,12 +80,12 @@ const CurrencySwitch = () => {
             }
             className={style.modal__euroBody}
           >
-            <input
+            {/* <input
               disabled={meta?.isCurrencyEuro}
               type='checkbox'
               checked={meta?.isCurrencyEuro}
               readOnly
-            />{' '}
+            />{' '} */}
             <div className={style.modal__currency}>EUR</div>
           </div>
         </div>
