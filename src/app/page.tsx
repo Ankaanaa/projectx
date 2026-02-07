@@ -1,19 +1,28 @@
+import { Cars } from '@/app/types/cars'
+import { mapperExampleCar } from '@/entities/car/lib/mappers'
 import Image from 'next/image'
 import AdvantagesOur from './advantagesOur/AdvantagesOur'
 import MarkCars from './api/markCars/MarkCars'
+import ExampleCar from './exampleCar/ExampleCar'
 import style from './main.module.scss'
 import RunningLine from './runningLine/RunningLine'
 import Services from './services/Services'
 
-export default function Home() {
+export default async function Home() {
+  const res = await fetch('http://localhost:3000/api/cars', {
+    cache: 'no-cache',
+  })
+  const cars: Cars = await res.json()
+
+  const carExampleOne = mapperExampleCar(cars.cars[2])
+  const carExampleTwo = mapperExampleCar(cars.cars[4])
+
   return (
     <div className={style.home}>
       <div className={style.home__photoBlock}>
         <Image
           className={style.home__photo}
-          src={
-            'https://i.postimg.cc/Rh6Dy1hb/137732-car-bugatti-geneva-motor-show-sports-car-coup-5000x2813.jpg'
-          }
+          src={'https://i.postimg.cc/jS0shwXt/thumb-1920-898158.jpg'}
           width={1400}
           height={700}
           alt='fon photo'
@@ -41,6 +50,8 @@ export default function Home() {
       <AdvantagesOur />
       <RunningLine />
       <Services />
+      <ExampleCar car={carExampleOne} />
+      <ExampleCar car={carExampleTwo} />
     </div>
   )
 }

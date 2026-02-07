@@ -1,0 +1,47 @@
+.example {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  .example__photoOne {
+    flex-basis: 45%;
+  }
+
+  .example__photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .example__photoTwoBlock {
+    position: relative;
+    flex-basis: 53%;
+  }
+
+  .example__carDescription {
+    position: absolute;
+    padding: 25px;
+    padding-top: 70px;
+    bottom: 60;
+    right: 50;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    background: rgba(144, 144, 144, 0.3);
+    backdrop-filter: blur(20px);
+  }
+  .example__name {
+    color: white;
+    font-size: 21px;
+  }
+  .example__line {
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-top: 10px;
+    border: 1px solid rgb(161, 161, 161);
+  }
+  .example__description {
+    margin-top: 10px;
+    color: rgb(238, 211, 211);
+  }
+}

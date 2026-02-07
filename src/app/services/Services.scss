@@ -45,4 +45,35 @@
     margin-left: 100px;
     margin-bottom: 10px;
   }
+
+  .services__container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+
+  .service__title {
+    color: white;
+    margin-top: 25px;
+    font-size: 21px;
+  }
+
+  .service__text {
+    color: gray;
+    margin-top: 20px;
+  }
+  .service__body {
+    flex-basis: 24%;
+    background-color: #0c0d0d;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .service__icon {
+    color: #fd5252;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 60%;
+    border: 1px solid #fd5252;
+  }
 }
