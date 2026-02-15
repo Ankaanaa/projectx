@@ -3,10 +3,12 @@ import { mapperExampleCar } from '@/entities/car/lib/mappers'
 import Image from 'next/image'
 import AdvantagesOur from './advantagesOur/AdvantagesOur'
 import MarkCars from './api/markCars/MarkCars'
+import DifferentFromOthers from './differentFromOthers/DifferentFromOthers'
 import ExampleCar from './exampleCar/ExampleCar'
 import style from './main.module.scss'
 import RunningLine from './runningLine/RunningLine'
 import Services from './services/Services'
+import { Voucher } from './shared/ui/Voucher'
 
 export default async function Home() {
   const res = await fetch('http://localhost:3000/api/cars', {
@@ -16,7 +18,6 @@ export default async function Home() {
 
   const carExampleOne = mapperExampleCar(cars.cars[2])
   const carExampleTwo = mapperExampleCar(cars.cars[4])
-
   return (
     <div className={style.home}>
       <div className={style.home__photoBlock}>
@@ -52,6 +53,8 @@ export default async function Home() {
       <Services />
       <ExampleCar car={carExampleOne} />
       <ExampleCar car={carExampleTwo} />
+      <DifferentFromOthers />
+      <Voucher />
     </div>
   )
 }
