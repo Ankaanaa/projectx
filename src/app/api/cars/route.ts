@@ -2,7 +2,6 @@ import { Cars, Meta } from '@/app/types/cars'
 import fs from 'fs'
 import { NextRequest, NextResponse } from 'next/server'
 import path from 'path'
-
 const filePath = path.join(process.cwd(), 'data', 'cars.json')
 
 const readDB = () => {
@@ -16,9 +15,11 @@ const writeDB = (data: any) => {
 
 export async function GET() {
   const data = readDB()
+
   if (!data) {
     return NextResponse.json({ error: 'not found meta' }, { status: 400 })
   }
+
   return NextResponse.json(data)
 }
 

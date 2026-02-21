@@ -23,7 +23,7 @@ const Header = () => {
             <Link className='header__link' href={'#'}>
               Home
             </Link>
-            <Link className='header__link' href={'#'}>
+            <Link className='header__link' href={'/cars-search'}>
               Category
             </Link>
             <Link className='header__link' href={'#'}>
