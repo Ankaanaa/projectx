@@ -8,7 +8,6 @@ interface props {
     photo: string
   }
 }
-
 const ExampleCar = (props: props) => {
   const photoCar = props.car.photo.split(',')
   return (

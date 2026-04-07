@@ -1,0 +1,13 @@
+.filter {
+  border: 1px solid aqua;
+  background-color: #0c0d0d;
+  padding: 20px;
+  flex-basis: 40%;
+  color: white;
+  // width: 500px;
+
+  .filter__body {
+    display: flex;
+    flex-direction: column;
+  }
+}

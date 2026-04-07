@@ -24,7 +24,7 @@ const Header = () => {
               Home
             </Link>
             <Link className='header__link' href={'/cars-search'}>
-              Category
+              CategoryPAGE
             </Link>
             <Link className='header__link' href={'#'}>
               About Us

@@ -16,7 +16,7 @@ const markCars: mark[] = [
     mark: 'lamborghini',
     link: 'https://i.postimg.cc/Ls09F3D3/lamborghinip.png',
   },
-  { mark: 'porshe', link: 'https://i.postimg.cc/tRkrqvW0/porshep.png' },
+  { mark: 'porsche', link: 'https://i.postimg.cc/tRkrqvW0/porshep.png' },
 ]
 interface mark {
   mark: string

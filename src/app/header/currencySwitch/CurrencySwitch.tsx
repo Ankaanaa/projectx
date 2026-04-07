@@ -18,7 +18,6 @@ const CurrencySwitch = () => {
   const getMeta = async () => {
     const fetchMeta = await fetch('/api/cars')
     const data: Cars = await fetchMeta.json()
-
     setMeta(data.meta)
   }
   const SwitchCurrency = async (currency: Meta) => {
