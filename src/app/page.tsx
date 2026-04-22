@@ -29,17 +29,17 @@ export default async function Home() {
           alt='fon photo'
         />
         <div className={style.home__infoBlock}>
-          <div className={style.home__title}>
+          <h1 className={style.home__title}>
             Discover Your <br />
             Perfect Car For Trip
-          </div>
+          </h1>
           <div className={style.home__infoBlockTwo}>
-            <div className={style.home__text}>
+            <p className={style.home__text}>
               It is a long established fact that a reader will be distracted{' '}
               <br />
               by the readable content of a a page when looking at its <br />
               layout
-            </div>
+            </p>
             <div className={style.home__btns}>
               <button className={style.home__btnOne}>Book Now</button>
               <button className={style.home__btnTwo}>How it Works</button>

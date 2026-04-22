@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='footer__body'>
-        <div className='footer__column__1'>
+        <section className='footer__column__1'>
           <div className='footer__items'>
             <div className='footer__name'>
               Project<span className='footer__span'>X</span>
@@ -23,16 +23,16 @@ const Footer = () => {
             <FooterFeedback email='email' />
             <FooterFeedback location='location' />
           </div>
-        </div>
-        <div className='footer__column__2'>
+        </section>
+        <section className='footer__column__2'>
           <FooterBlockInfo nameBlock='Company' links={company} />
-        </div>
-        <div className='footer__column__3'>
+        </section>
+        <section className='footer__column__3'>
           <FooterBlockInfo nameBlock='Company Service' links={companyService} />
-        </div>
-        <div className='footer__column__4'>
+        </section>
+        <section className='footer__column__4'>
           <FooterBlockInfo nameBlock='Book with us' button={true} />
-        </div>
+        </section>
       </div>
       <div className='footer__line'></div>
       <div className='footer__contacts'>

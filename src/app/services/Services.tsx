@@ -61,23 +61,23 @@ const Services = () => {
   const creationServiceBlock = servicesBlocks.map(
     (el: service, index: number) => {
       return (
-        <div className='service__body' key={index}>
+        <article className='service__body' key={index}>
           <div className='service__blockImg'>{el.element}</div>
-          <div className='service__title'>{el.title}</div>
-          <div className='service__text'>{el.text}</div>
-        </div>
+          <h2 className='service__title'>{el.title}</h2>
+          <p className='service__text'>{el.text}</p>
+        </article>
       )
     }
   )
   return (
-    <div className='services'>
+    <section className='services'>
       <div className='services__body'>
         <div className='services__block'>
-          <div className='services__title'>SERVICES</div>
-          <div className='services__text'>
+          <h1 className='services__title'>SERVICES</h1>
+          <p className='services__text'>
             / Check out our cars and reserve your favorite now! Enjoy premium
             quality and comfort.
-          </div>
+          </p>
         </div>
         <button className='services__btn'>
           Find out more{' '}
@@ -88,7 +88,7 @@ const Services = () => {
         </button>
       </div>
       <div className='services__container'>{creationServiceBlock}</div>
-    </div>
+    </section>
   )
 }
 

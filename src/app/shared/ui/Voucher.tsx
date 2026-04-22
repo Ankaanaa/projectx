@@ -4,7 +4,7 @@ import { Button } from './button'
 export const Voucher = () => {
   return (
     <div className={style.voucher}>
-      <div className={style.voucher__mainTitle}>Car rental voucher</div>
+      <h1 className={style.voucher__mainTitle}>Car rental voucher</h1>
       <div className={style.voucher__container}>
         <div className={style.voucher__imageBlock}>
           <Image
@@ -18,14 +18,14 @@ export const Voucher = () => {
           />
         </div>
         <div className={style.voucher__content}>
-          <div className={style.voucher__title}>
+          <h2 className={style.voucher__title}>
             Looking for a gift idea for a loved one? <br />
             Is a birthday or other celebration approaching?
-          </div>
-          <div className={style.voucher__text}>
+          </h2>
+          <p className={style.voucher__text}>
             Then you've come to the right place! <br />
             Our company offers gift vouchers for car rentals.
-          </div>
+          </p>
           <Button
             link='#'
             text='Order a Voucher'

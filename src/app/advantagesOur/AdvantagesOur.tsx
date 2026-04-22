@@ -27,19 +27,19 @@ const blockInfo: info[] = [
 const AdvantagesOur = () => {
   const CreationBlockInfo = blockInfo.map((el: info, index) => {
     return (
-      <div key={index} className='advantages__block'>
-        <div className='advantages__block__title'>{el.title}</div>
-        <div className='advantages__block__text'>{el.text}</div>
-      </div>
+      <article key={index} className='advantages__block'>
+        <h2 className='advantages__block__title'>{el.title}</h2>
+        <p className='advantages__block__text'>{el.text}</p>
+      </article>
     )
   })
 
   return (
-    <div className='advantages'>
-      <div className='advantages__title'>
+    <section className='advantages'>
+      <h1 className='advantages__title'>
         Ride To Destinations <br />
         With Maximum Comfort
-      </div>
+      </h1>
       <div className='advantages__p'>
         Experience effortless travel with modern cars designed for comfort and
         style. <br />
@@ -55,7 +55,7 @@ const AdvantagesOur = () => {
           height={700}
         />
       </div>
-    </div>
+    </section>
   )
 }
 

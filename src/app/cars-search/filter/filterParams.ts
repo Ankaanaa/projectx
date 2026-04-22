@@ -34,8 +34,8 @@ export const FilterParams = {
     { value: 'manual', label: 'Manual' },
   ],
   electricBlock: [
-    { value: true, label: 'Electric' },
-    { value: false, label: 'Non-electric' },
+    { value: 'electric', label: 'Electric' },
+    { value: 'non-electric', label: 'Non-electric' },
   ],
   releaseYear: [
     { value: { min: 2000, max: 2010 }, label: '2000 - 2010' },

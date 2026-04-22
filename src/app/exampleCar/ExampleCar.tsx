@@ -11,8 +11,8 @@ interface props {
 const ExampleCar = (props: props) => {
   const photoCar = props.car.photo.split(',')
   return (
-    <div className={style.example}>
-      <div className={style.example__photoOne}>
+    <article className={style.example}>
+      <figure className={style.example__photoOne}>
         <Image
           src={photoCar[0]}
           alt={props.car.fullNameModel}
@@ -20,8 +20,8 @@ const ExampleCar = (props: props) => {
           height={500}
           className={style.example__photo}
         />
-      </div>
-      <div className={style.example__photoTwoBlock}>
+      </figure>
+      <figure className={style.example__photoTwoBlock}>
         <Image
           src={photoCar[1].trimStart()}
           alt={props.car.fullNameModel}
@@ -31,14 +31,12 @@ const ExampleCar = (props: props) => {
         />
 
         <div className={style.example__carDescription}>
-          <div className={style.example__name}>{props.car.fullNameModel}</div>
+          <h2 className={style.example__name}>{props.car.fullNameModel}</h2>
           <div className={style.example__line}></div>
-          <div className={style.example__description}>
-            {props.car.description}
-          </div>
+          <p className={style.example__description}>{props.car.description}</p>
         </div>
-      </div>
-    </div>
+      </figure>
+    </article>
   )
 }
 

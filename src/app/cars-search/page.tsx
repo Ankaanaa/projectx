@@ -18,7 +18,7 @@ export interface userSelectionInFilter {
   priceRanges: { min: number | null; max: number | null }[]
   releaseYearRanges: { min: number | null; max: number | null }[]
   classCar: string[]
-  isElectric: boolean[]
+  isElectric: string[]
   transmissionType: string[]
   motorType: string[]
 }
@@ -27,8 +27,8 @@ export default function CarsSearch() {
   const [userSelection, setUserSelection] = useState<userSelectionInFilter>({
     brand: [],
     model: [],
-    priceRanges: [{ min: null, max: null }],
-    releaseYearRanges: [{ min: null, max: null }],
+    priceRanges: [],
+    releaseYearRanges: [],
     classCar: [],
     isElectric: [],
     transmissionType: [],

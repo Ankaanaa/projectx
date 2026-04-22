@@ -11,12 +11,16 @@
     flex-direction: column;
   }
 
-  .filter_checkbox {
+  .filter__checkbox {
     width: 15px;
     height: 15px;
     background-color: white;
+    display: inline-block;
   }
-  .filter_checkboxActive {
+  input {
+    display: none;
+  }
+  .filter__checkboxActive {
     width: 15px;
     height: 15px;
     background-color: #fd5252;

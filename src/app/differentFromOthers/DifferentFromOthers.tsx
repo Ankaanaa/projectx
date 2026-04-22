@@ -82,25 +82,25 @@ const DifferentFromOthers = () => {
   const CreationBlockDifferent = different.map(
     (el: differentObject, index: number) => {
       return (
-        <div key={index} className={style.different__body__block}>
+        <article key={index} className={style.different__body__block}>
           <div className={style.different__iconBlock}>{el.icon}</div>
-          <div className={style.different__body__title}>{el.title}</div>
-          <div className={style.different__body__text}>{el.text}</div>
-        </div>
+          <h2 className={style.different__body__title}>{el.title}</h2>
+          <p className={style.different__body__text}>{el.text}</p>
+        </article>
       )
     }
   )
   return (
-    <div className={style.different}>
+    <section className={style.different}>
       <div className={style.different__block}>
-        <div className={style.different__title}>What makes us different</div>
-        <div className={style.different__text}>
+        <h1 className={style.different__title}>What makes us different</h1>
+        <p className={style.different__text}>
           / Explore our unique services and see why ProjectX is the leader in
           premium car rentals in Italy.
-        </div>
+        </p>
       </div>
       <div className={style.different__body}>{CreationBlockDifferent}</div>
-    </div>
+    </section>
   )
 }
 

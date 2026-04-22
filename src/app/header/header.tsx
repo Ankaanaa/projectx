@@ -1,3 +1,5 @@
+'use client'
+
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import {
   faFacebookF,
@@ -14,16 +16,20 @@ const Header = () => {
     <header className='header'>
       <div className='header__body'>
         <div className='header__column'>
-          <div className='header__name'>
+          <h1 className='header__name'>
             Project<span className='header__span'>X</span>
-          </div>
+          </h1>
         </div>
         <div className='header__column'>
           <nav className='header__nav'>
             <Link className='header__link' href={'#'}>
               Home
             </Link>
-            <Link className='header__link' href={'/cars-search'}>
+            <Link
+              className='header__link'
+              data-testid='cars-search-link'
+              href={'/cars-search'}
+            >
               CategoryPAGE
             </Link>
             <Link className='header__link' href={'#'}>
