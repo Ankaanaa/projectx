@@ -11,7 +11,7 @@ import Services from './services/Services'
 import { Voucher } from './shared/ui/Voucher'
 
 export default async function Home() {
-  const res = await fetch('http://localhost:3000/api/cars', {
+  const res = await fetch('/api/cars', {
     cache: 'no-cache',
   })
   const cars: Cars = await res.json()
