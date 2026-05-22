@@ -11,7 +11,7 @@ import Services from './services/Services'
 import { Voucher } from './shared/ui/Voucher'
 
 export default async function Home() {
-  const res = await fetch('https://rent-cars-ochre.vercel.app/api/cars', {
+  const res = await fetch('rent-cars-plum.vercel.app/api/cars', {
     cache: 'no-cache',
   })
   const cars: Cars = await res.json()
