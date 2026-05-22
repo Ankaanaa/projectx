@@ -1,9 +1,20 @@
+import { userSelectionInFilter } from '../../page'
+import { TFilterFn } from '../filterBlock/FilterBlock'
+
 interface props {
-  range: { value: { min: number | null; max: number | null }[]; label: string }
+  rangeNumbers: range[]
+  filter: TFilterFn
+  userSelection: userSelectionInFilter
+}
+interface range {
+  value: { min: number | null; max: number | null }
+  label: string
 }
 
-const FilterBlockRange = ({ range }: props) => {
-  const
+const FilterBlockRange = ({ rangeNumbers }: props) => {
+  const createUIReleaseOrPriceBlock = rangeNumbers.map((el: range) => {
+    return <div></div>
+  })
   return (
     <div>
       <div></div>
