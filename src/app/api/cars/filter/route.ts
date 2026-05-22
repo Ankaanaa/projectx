@@ -3,14 +3,20 @@ import fs from 'fs'
 import { NextRequest, NextResponse } from 'next/server'
 import path from 'path'
 
+//{ min: number | null; max: number | null }
 interface selectionUserFilter {
-  brand?: string | null
-  model?: string | null
-  releaseYear?: number | null
-  priceMax?: number | null
-  priceMin?: number | null
-  classCar?: string | null
-  isElectric?: boolean | null
+  brand: string[] | null
+  model: string[] | null
+  priceRanges: string[] | null
+  releaseYearRanges: string[] | null
+  classCar: string[] | null
+  isElectric: string[] | null
+  transmissionType: string[] | null
+  motorType: string[] | null
+}
+interface range {
+  min: number | null
+  max: number | null
 }
 
 const filePath = path.join(process.cwd(), 'data', 'utf-8')
@@ -22,27 +28,34 @@ const readDB = () => {
 export async function GET(req: NextRequest) {
   const data = readDB()
 
-  if (!data) {
+  if (!data.ok) {
     return NextResponse.json({ error: 'not found data', status: 400 })
   }
   const { searchParams } = new URL(req.url)
+  const getParam = (key: keyof selectionUserFilter) => {
+    return searchParams.get(key)
+  }
 
+  const getParamTwo = (key: keyof selectionUserFilter) => {
+    return
+  }
+  const brandParam = getParam('brand')
+  const modelParam = getParam('model')
+  const releaseYearParam = getParam('releaseYearRanges')
+  const classCarParam = getParam('classCar')
+  const isElectricParam = getParam('isElectric')
+  const priceRangeParam = getParam('priceRanges')
+  const transmissionParam = getParam('transmissionType')
+  const motorParam = getParam('motorType')
   let selectionUserFilter: selectionUserFilter = {
-    brand: searchParams.get('brand'),
-    model: searchParams.get('model'),
-    releaseYear: searchParams.get('releaseYear')
-      ? Number(searchParams.get('releaseYear'))
-      : null,
-    priceMax: searchParams.get('priceMax')
-      ? Number(searchParams.get('priceMax'))
-      : null,
-    priceMin: searchParams.get('priceMin')
-      ? Number(searchParams.get('priceMin'))
-      : null,
-    classCar: searchParams.get('classCar'),
-    isElectric: searchParams.get('isElectric')
-      ? Boolean(searchParams.get('isElectric'))
-      : null,
+    brand: brandParam ? [brandParam] : null,
+    model: modelParam ? [modelParam] : null,
+    releaseYearRanges: releaseYearParam ? [releaseYearParam] : null,
+    priceRanges: priceRangeParam ? [priceRangeParam] : null,
+    classCar: classCarParam ? [classCarParam] : null,
+    isElectric: isElectricParam ? [isElectricParam] : null,
+    transmissionType: transmissionParam ? [transmissionParam] : null,
+    motorType: motorParam ? [motorParam] : null,
   }
 
   const priceKey = data.meta.isCurrencyDollar

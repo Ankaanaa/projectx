@@ -10,8 +10,6 @@ import Filter from './filter/Filter'
 
 //TODO Создать в этой папке папку динамическую [название машины] так как при клике на понравившися варинт будет загружаться та которую выбрал пользователь ну и api такой же динамический
 
-//TODO ПЕРЕДЕЛАТЬ userSelectionInFilter в массив для чекбоксов
-//priceRanges  releaseYearRanges наверное нужно в useEffect правильно зависимости их написать
 export interface userSelectionInFilter {
   brand: string[]
   model: string[]
@@ -37,8 +35,8 @@ export default function CarsSearch() {
 
   const GetDataCars = async () => {
     const fetchData = await fetch('/api/cars')
-    const cars: Cars = await fetchData.json()
-    if (!cars) {
+    const cars = await fetchData.json()
+    if (!cars.ok) {
       setDataCars(null)
     }
     setDataCars(cars)
@@ -64,6 +62,7 @@ export default function CarsSearch() {
     userSelection.motorType.length,
   ])
 
+  //TODO есть роут под него но надо переделывать его полностью
   const getFilterChangeDataCars = async () => {
     const query = new URLSearchParams(
       Object.entries(userSelection)
@@ -71,6 +70,7 @@ export default function CarsSearch() {
         .map(([key, value]) => [key, String(value)])
     ).toString()
     const fetchData = await fetch(`/api/cars/filter?${query}`)
+    debugger
     const ChangeData: Cars = await fetchData.json()
     setDataCars(ChangeData)
   }

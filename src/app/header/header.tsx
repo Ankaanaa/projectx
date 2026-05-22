@@ -30,7 +30,7 @@ const Header = () => {
               data-testid='cars-search-link'
               href={'/cars-search'}
             >
-              CategoryPAGE
+              Cars Search
             </Link>
             <Link className='header__link' href={'#'}>
               About Us
