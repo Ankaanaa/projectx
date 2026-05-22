@@ -1,3 +1,4 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
@@ -12,10 +13,16 @@ const FooterFeedback = (props: props) => {
       <div className='footer__link'>
         <div className='footer__icon'>
           {props.email ? (
-            <FontAwesomeIcon className='footer__img' icon={faEnvelope} />
+            <FontAwesomeIcon
+              className='footer__img'
+              icon={faEnvelope as IconProp}
+            />
           ) : (
             props.location && (
-              <FontAwesomeIcon className='footer__img' icon={faLocationDot} />
+              <FontAwesomeIcon
+                className='footer__img'
+                icon={faLocationDot as IconProp}
+              />
             )
           )}
         </div>
